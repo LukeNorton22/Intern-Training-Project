@@ -33,7 +33,6 @@ namespace DatabaseAmusementParkProject.Data
         public DbSet<ThemePark> ThemeParks { get; set; } // Table for theme parks
         public DbSet<Location> Locations { get; set; } // Table for locations
         public DbSet<ThemePark_Location> ThemeParks_Locations { get; set; } // Many-to-many linking table
-        public DbSet<ThemePark_Reviews> ThemeParks_Review { get; set; } // Table for reviews One-to-one relationship
         public DbSet<User> Users { get; set; } // Table for users
 
         // ✅ When you run migrations, EF Core will use these properties to generate database tables
