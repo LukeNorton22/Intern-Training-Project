@@ -31,6 +31,7 @@ All of these endpoints should go inside `ParkController.cs`.
 - **Route:** `GET api/park/parks/location/{locationId}`
 - **DTO Returned:** `ParkDTO`
 - **Description:** Return all parks that are located in the specified location ID.
+- **Input** `locationId` Endpoint should take in a location id.
 
 ---
 
@@ -38,5 +39,6 @@ All of these endpoints should go inside `ParkController.cs`.
 - **Route:** `GET api/park/GetParksBySearch?searchTerm=YourSearchTerm`
 - **DTO Returned:** `ParkDTO`
 - **Description:** Search parks by name (case-insensitive), and return matches with location info.
+- **Input** Should take in a string of the park name.
 
 ---
