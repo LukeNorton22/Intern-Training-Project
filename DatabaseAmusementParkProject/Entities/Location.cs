@@ -6,9 +6,5 @@
     {
         public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;
-
-        // Navigation property for linked ThemePark_Location records
-        public List<ThemePark_Location> ThemePark_Locations { get; set; } =
-            new List<ThemePark_Location>();
     }
 }

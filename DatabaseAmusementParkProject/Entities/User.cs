@@ -8,8 +8,5 @@
         public Guid Id { get; set; }
         public string UserName { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
-
-        // Navigation property to reviews they’ve written
-        public List<ThemePark_Reviews> Reviews { get; set; } = new List<ThemePark_Reviews>();
     }
 }
