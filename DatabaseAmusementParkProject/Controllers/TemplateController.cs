@@ -19,10 +19,6 @@ namespace DatabaseAmusementParkProject.Controllers
 
         // ✅ Fields for dependencies
 
-        // 🔹 This is the application's database context.
-        // It lets you query and save data directly to the database.
-        private readonly AppDbContext _context;
-
         // 🔹 This is the interface for the service that contains the business logic.
         // Services help keep your controller clean by moving logic (like validation,
         // calculations, or rule enforcement) out of the controller.
@@ -32,9 +28,8 @@ namespace DatabaseAmusementParkProject.Controllers
         // 🔧 Constructor injection
         // ASP.NET Core automatically provides these when it creates the controller.
         // This is called "Dependency Injection", and it keeps your code loosely coupled and testable.
-        public TemplateController(AppDbContext context, ITemplateInterface templateService)
+        public TemplateController(ITemplateInterface templateService)
         {
-            _context = context;
             _templateService = templateService;
         }
 
