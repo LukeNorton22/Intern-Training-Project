@@ -2,6 +2,9 @@
 
 This document outlines the step-by-step tasks for building out the backend API functionality for parks and reviews. You’ll work in **two controllers**: `ParkController` and `ReviewController`.
 
+# Disclaimer
+There are template files that already exist to help you understand the structure of how the API should be set up.
+
 ---
 
 ## ✅ Stage 1: `ParkController` — Parks and Locations Only
